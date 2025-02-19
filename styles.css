@@ -3,9 +3,9 @@
 * {
   box-sizing: border-box;
 }
- 
+
 body {
-  background-color: #686de0;
+  background-color: #4a90e2;
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
@@ -16,46 +16,62 @@ body {
   margin: 0;
   padding: 20px;
 }
- /* demonstrating changes to container*/
+
+/* Container styling adjustments */
 .container {
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
   padding: 50px 20px;
   text-align: center;
-  max-width: 100%;
-  width: 800px;
+  max-width: 90%;
+  width: 600px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.02);
 }
 
 h3 {
   margin: 0;
-  opacity: 0.5;
-  letter-spacing: 2px;
+  opacity: 0.7;
+  letter-spacing: 1.5px;
 }
 
 .joke {
-  font-size: 30px;
+  font-size: 28px;
   letter-spacing: 1px;
-  line-height: 40px;
-  margin: 50px auto;
-  max-width: 600px;
+  line-height: 36px;
+  margin: 40px auto;
+  max-width: 500px;
 }
 
+/* Enhanced button styling */
 .btn {
-  background-color: #9f68e0;
+  background-color: #7d3cff;
   color: #fff;
-  border: 0;
+  border: none;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
-  padding: 14px 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  padding: 12px 35px;
   font-size: 16px;
   cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #5d2cd6;
 }
 
 .btn:active {
-  transform: scale(0.98);
+  transform: scale(0.96);
+}
+
+.btn.clicked {
+  background-color: #4a2bbd;
 }
 
 .btn:focus {
-  outline: 0;
+  outline: none;
 }
